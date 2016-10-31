@@ -16,7 +16,7 @@ import javax.persistence.GeneratedValue;				//*generates auto
 import javax.persistence.GenerationType;					//Type of auto generate
 import javax.persistence.Id;						//Marks primary key
 import javax.persistence.JoinTable;						//*marks table , allows for join table name change 
-import javax.persistence.JoinColumn;						//*marks column, allows to generate additional one  
+import javax.persistence.JoinColumn;						//*marks column, allows to change name of join column 
 import javax.persistence.Lob;						//Large Object over 255characters
 import javax.persistence.Table;						
 import javax.persistence.Temporal;					//Date Object
@@ -27,7 +27,7 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
 //Object notation
-@Entity 								// Cerates entity
+@Entity 								// Creates entity
 @Table (name="UserDetails")				// @Table marks table (name)
 public class UserDetails {
 	
